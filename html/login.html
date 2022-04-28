@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="home"><a href="../index.html">
+            <h2>返回首页</h2>
+        </a></div>
+    <div class="box">
+        <h2>登录</h2>
+        <form action="action.php" name="f1">
+            <div class="inputBox">
+                <input type="text" name="username" id="username" required onfocus='clearInfo1();' onblur="check1()">
+                <label for="username" id="l-username">用户名</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" id="password" required onfocus='clearInfo2();' onblur="check2()">
+                <label for="password" id="l-password">密码</label>
+            </div>
+            <input type="submit" value="登录">
+        </form>
+        <ul>
+            <li><a href="#">登录遇到问题？</a></li>
+            <li><a href="register.html">立即注册</a></li>
+        </ul>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

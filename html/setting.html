@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>信息设置</title>
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/setting.css">
+</head>
+
+<body>
+    <div class="home"><a href="../index.html">
+            <h2>返回首页</h2>
+        </a></div>
+    <div class="content">
+        <div class="box">
+            <h2>信息修改</h2>
+            <form action="action.php" name="f3">
+                <div class="inputBox">
+                    <input type="text" name="username" id="username" required onfocus='clearInfo5();' onblur="check5()">
+                    <label for="username" id="l-username">昵称</label>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="确定修改">
+                </div>
+            </form>
+            <form action="action.php" name="f4">
+                <div class="inputBox">
+                    <input type="password" name="password" id="password" required onfocus='clearInfo2();'
+                        onblur="check2()">
+                    <label for="password" id="l-password">密码</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="repassword" id="repassword" required onfocus='clearInfo3();'
+                        onblur="check3()">
+                    <label for="repassword" id="l-repassword">确认密码</label>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="确定修改">
+                </div>
+            </form>
+            <form action="action.php" name="f5">
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" required onfocus='clearInfo4();' onblur="check4()">
+                    <label for="email" id="l-email">邮箱</label>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="确定修改">
+                </div>
+            </form>
+            <form action="action.php" name="f6">
+                <div class="sex">
+                    <label>性别</label>
+                    <label><input type="radio" name="sex" />男</label>
+                    <label><input type="radio" name="sex" />女</label>
+                </div>
+                <div class="id">
+                    <label for="select">身份</label>
+                    <select name="select" id="select">
+                        <option>学生</option>
+                        <option>家长</option>
+                        <option>老师</option>
+                        <option>其他</option>
+                    </select>
+                </div>
+                <div class="hobby">
+                    <label for="hobby">爱好</label>
+                    运动<input type="checkbox" name="basketball" id="hobby">
+                    音乐<input type="checkbox" name="music" id="hobby">
+                    影视<input type="checkbox" name="movie" id="hobby">
+                </div>
+                <div class="textarea">
+                    <label for="textarea">个性签名</label>
+                    <textarea name="textarea" cols="30" rows="2"></textarea>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="确定修改">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/register.js"></script>
+    <script src="../js/setting.js"></script>
+</body>
+
+</html>

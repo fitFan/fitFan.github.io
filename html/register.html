@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="home"><a href="../index.html">
+            <h2>返回首页</h2>
+        </a></div>
+    <div class="box">
+        <h2>用户注册</h2>
+        <form action="action.php" name="f2">
+            <div class="inputBox">
+                <input type="text" name="username" id="username" required onfocus='clearInfo1();' onblur="check1()">
+                <label for="username" id="l-username">用户名</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" id="password" required onfocus='clearInfo2();' onblur="check2()">
+                <label for="password" id="l-password">密码</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="repassword" id="repassword" required onfocus='clearInfo3();'
+                    onblur="check3()">
+                <label for="repassword" id="l-repassword">确认密码</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="email" id="email" required onfocus='clearInfo4();' onblur="check4()">
+                <label for="email" id="l-email">邮箱</label>
+            </div>
+            <input type="submit" value="注册">
+        </form>
+        <ul>
+            <li><a href="#">注册遇到问题？</a></li>
+            <li><a href="login.html">去登陆</a></li>
+        </ul>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

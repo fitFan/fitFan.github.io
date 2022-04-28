@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: '宋体';
+    background: url('../images/slider/l-1.png');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+.home h2 {
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 居中 */
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+}
+
+.box h2 {
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+.box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label {
+    top: -25px;
+}
+
+.box input[type='submit'] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgba(3, 169, 244, .5);
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.box ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.box .sex {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.box .textarea {
+    padding: 20px 0;
+    position: relative;
+}
+
+.box .textarea label {
+    color: #fff;
+    top: 0;
+    left: 0;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.box .textarea input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}

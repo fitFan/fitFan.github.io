@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    background-color: #fff;
+}
+
+header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 31.5px;
+}
+
+header .top .logo h1 {
+    width: 170px;
+    height: 67px;
+    background: url('../images/logo.png') no-repeat;
+}
+
+header .top-right {
+    display: flex;
+    align-items: center;
+}
+
+header .top-right .search {
+    position: relative;
+    left: 30px;
+}
+
+header .top input {
+    width: 100px;
+    height: 21px;
+    padding-left: 20px;
+    border-radius: 10px;
+    float: left;
+    background: transparent;
+}
+
+header .top ul {
+    float: left;
+    list-style-type: none;
+}
+
+header .top ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+
+header .navigation {
+    background-color: #eff2f7;
+}
+
+header .navigation #navigation {
+    list-style-type: none;
+    margin-left: 31.5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header .navigation ul li a {
+    display: block;
+    line-height: 50px;
+    padding: 0 30px;
+    height: 50px;
+}
+
+header .navigation ul li a:hover {
+    color: #101111;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header .navigation .title {
+    position: relative;
+}
+
+header .navigation .subNav {
+    list-style: none;
+    width: 124px;
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+header .navigation .subNav li {
+    margin-top: 2px;
+}
+
+header .navigation .subNav li a {
+    text-align: center;
+    line-height: 50px;
+    padding: 0 30px;
+    height: 50px;
+}
+
+header .navigation .subNav li a:hover {
+    background-color: rgb(239, 242, 247, .5);
+    color: #101111;
+}
+
+/* 内容部分01 */
+.content1 {
+    display: flex;
+    width: 100%;
+}
+
+.content1 .image {
+    width: 70%;
+}
+
+#slider {
+    width: 800px;
+    height: 508px;
+    margin: 40px 31.5px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+#imgList {
+    height: 508px;
+    width: 4000px;
+}
+
+#imgList img {
+    float: left;
+}
+
+#prev,
+#next {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    top: 0;
+}
+
+#prev span,
+#next span {
+    position: absolute;
+    width: 40px;
+    line-height: 45px;
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+    top: 50%;
+    margin-top: -22px;
+    font-size: 24px;
+}
+
+#prev:hover span,
+#next:hover span {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+#next span {
+    right: 0;
+}
+
+#buttons {
+    position: absolute;
+    width: 100%;
+    line-height: 30px;
+    background: transparent;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+#buttons li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+#buttons .li1 {
+    background-color: #eff2f7;
+}
+
+.rcontent {
+    width: 30%;
+}
+
+.timeblock {
+    background-color: #eff2f7;
+    width: 300px;
+    height: 234px;
+    margin: 40px 31.5px 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeblock .time {
+    color: #000;
+    display: flex;
+    width: 80%;
+    height: 125px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.timeblock .time .padding {
+    font-size: 35px;
+    font-weight: bold;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.timeblock .time .padding-bottom {
+    width: 100px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content1 .poem {
+    color: #000;
+    text-align: center;
+    background-color: #eff2f7;
+    width: 300px;
+    height: 234px;
+    margin: 40px 31.5px 40px auto;
+}
+
+.content1 .poem h1 {
+    padding: 30px;
+}
+
+/* 内容部分02 */
+.content2 {
+    padding: 40px 31.5px;
+    display: flex;
+}
+
+.content2 .lcontent2 {
+    background-color: #eff2f7;
+    width: 100%;
+}
+
+.content2 .lcontent2 h2 {
+    color: #000;
+    padding: 10px;
+}
+
+.content2 .lcontent2 ul {
+    list-style-type: none;
+}
+
+.content2 .lcontent2 ul li {
+    padding: 10px;
+}
+
+.content2 .lcontent2 ul li a {
+    color: #000;
+    height: 41px;
+}
+
+.content2 .rcontent2 {
+    width: 400px;
+}
+
+.content2 .rcontent2 .meihua {
+    height: 265px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #717070;
+    color: #FFF;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+}
+
+.copyright p {
+    padding: 10px;
+}
+
+.copyright a {
+    padding: 10px;
+    color: #FFF;
+}

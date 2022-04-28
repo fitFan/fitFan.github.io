@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Body */
+body {
+    font-family: source-sans-pro;
+    background-color: #f2f2f2;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-style: normal;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+}
+
+/* Navigation */
+header {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 170px;
+    height: 67px;
+    background: url('../images/logo.png') no-repeat;
+}
+
+nav {
+    background-color: #eff2f7;
+
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+}
+
+nav ul li a {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 30px;
+    display: block;
+    height: 50px;
+}
+
+nav ul li:hover a {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.map {
+    font-size: 22px;
+    margin: 20px 20px 10px;
+}
+
+.nav {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul li {
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    background-color: rgba(3, 169, 244, .5);
+    border-radius: 5px;
+    margin: 10px 2.5px;
+}
+
+.nav ul li a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.study,
+.entertainment {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #eff2f7;
+    margin-bottom: 20px;
+}
+
+.study,
+.entertainment,
+th,
+tr,
+td {
+    border: 1px solid #000;
+}
+
+.study .tr1 .td1 {
+    width: 15%;
+}
+
+.study .tr1 .td2 {
+    width: 40%;
+}
+
+.study .tr1 .td3 {
+    width: 30%;
+}
+
+.study .tr1 .td4 {
+    width: 15%;
+}
+
+.entertainment .tr1 .td1 {
+    width: 15%;
+}
+
+.entertainment .tr1 .td2 {
+    width: 40%;
+}
+
+.entertainment .tr1 .td3 {
+    width: 30%;
+}
+
+.entertainment .tr1 .td4 {
+    width: 15%;
+}
+
+th,
+td {
+    padding: 15px 5px;
+}
+
+.copyright p {
+    padding: 10px;
+}
+
+/* 声明 */
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #717070;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+}
